@@ -2,12 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-    const buttonText = { text: 'Click me!'};
+    
     return (
-        <div>
-            <label className="label" htmlFor="name">Enter name:</label>
-            <input id="name" type="text"/>
-            <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
+        <div className="ui container comments">
+            <div className="comment">
+                <a href="/" className="avatar">
+                    <img alt="avatar"/>
+                </a>
+                <div className="content">
+                    <a href="/" className="author">
+                        Sam
+                    </a>
+                    <div className="metadata">
+                        <span className="date">Today at 6pm</span>
+
+                    </div>
+                    <div className="text">
+                        Nice Blog Post!
+                    </div>
+                </div>
+            </div>
+            
         </div>
     );
 };
