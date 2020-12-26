@@ -15,6 +15,7 @@ class SearchBar extends React.Component {
         // e.preventDefault();
         //console.log(this.state.term) <-  THROWS AN 'UNDEFINED' ERROR! BECAUSE YOU NEED AN ARROW FUNCTION FOR 'THIS' TO WORK PROPERLY
     //  arrow functions AUTOMATICALLY bind 'this'
+    // The error is: cannot read property 'state' of UNDEFINED...we don't know what the heck 'this' is here!
     //}
 
     // could also do <form onSubmit={(event) => onFormSubmit(event)}
